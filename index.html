@@ -56,6 +56,20 @@
         </p>
         <button class="btn" onclick="calculate()">Calculate</button>
     </div>
+    
+    <script>
+        const result=document.getElementById("answer");
+        function calculate(){
+            const principle= document.getElementById("p");
 
+            const rate= document.getElementById("r");
+
+            const time= document.getElementById("t");
+
+            const interest= (parseInt(principle.value)*parseInt(rate.value)*parseInt(time.value))/100;
+            const result=document.getElementById("answer");
+            result.innerText=`Interest: ${interest}`;
+        }
+    </script>
 </body>
 </html>
